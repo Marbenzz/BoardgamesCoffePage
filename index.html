@@ -3,31 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café de Juegos de Mesa - Buenos Aires</title>
+    <title>Punto de Partida - Juegos & Café</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Bienvenidos al Café de Juegos de Mesa</h1>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo del Café">
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes-somos.html">Quienes Somos</a>
+        <a href="donde-estamos.html">Dónde Estamos</a>
+        <a href="nuestro-menu.html">Nuestro Menú</a>
+        <a href="como-funciona.html">Cómo Funciona</a>
+        <a href="nuestro-catalogo.html">Nuestro Catálogo</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="quienes-somos.html">Quienes Somos</a>
-    <a href="donde-estamos.html">Dónde Estamos</a>
-    <a href="nuestro-menu.html">Nuestro Menú</a>
-    <a href="como-funciona.html">Cómo Funciona</a>
-    <a href="nuestro-catalogo.html">Nuestro Catálogo</a>
-</nav>
+<!-- Sección Principal -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <img src="logo-grande.png" alt="Logo Grande del Café">
+            <p class="hero-text">Diversión, Estrategia, Amistad</p>
+        </div>
+        <div class="hero-right">
+            <img src="imagen-derecha.jpg" alt="Imagen Descriptiva">
+        </div>
+    </div>
+</section>
 
-<section class="landing-page">
-    <img src="logo.png" alt="Logo del Café de Juegos de Mesa">
-    <h1>Café de Juegos de Mesa</h1>
-    <p>¡Ven a disfrutar de una experiencia única en Buenos Aires!</p>
+<!-- Sección de Quienes Somos y Nuestro Servicio -->
+<section class="about-service">
+    <div class="about">
+        <h2>Quienes Somos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ligula lorem.</p>
+    </div>
+    <div class="service">
+        <h2>Nuestro Servicio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu odio eu felis efficitur congue.</p>
+    </div>
+</section>
+
+<!-- Sección de Dónde Estamos -->
+<section class="location">
+    <div class="map">
+        <!-- Conexión con Google Maps API para mostrar el mapa -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.956556316063!2d-122.08424948479239!3d37.42199927982178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b9b5f74e67%3A0x7f1a784f9a3ff4ec!2sGoogleplex!5e0!3m2!1sen!2sus!4v1589738128437!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="location-details">
+        <img src="cafe-exterior.jpg" alt="Foto del Café">
+        <div class="transport">
+            <h3>Medios de Transporte</h3>
+            <p>Colectivos: 24, 36, 56, 99</p>
+            <p>Trenes: Línea Mitre</p>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Café de Juegos de Mesa. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Punto de Partida - Juegos & Café. Todos los derechos reservados.</p>
 </footer>
 
 </body>
