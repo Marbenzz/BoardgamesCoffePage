@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+header {
+    background-color: #1B4B4A; /* Verde oscuro del logo */
+    color: #FFA500; /* Naranja del logo */
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #1B4B4A; /* Verde oscuro del logo */
+    color: #FFFFFF; /* Blanco para el texto */
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF; /* Blanco para el texto */
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFA500; /* Naranja del logo */
+}
+
+.content {
+    padding: 2em;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+h1, h2 {
+    color: #1B4B4A; /* Verde oscuro del logo */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.image-gallery img {
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin: 1.5em 0;
+}
+
+.image-text img {
+    max-width: 30%;
+    margin-right: 1em;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1B4B4A; /* Verde oscuro del logo */
+    color: #FFFFFF; /* Blanco para el texto */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

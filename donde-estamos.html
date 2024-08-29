@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dónde Estamos - Café de Juegos de Mesa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = {lat: -34.603684, lng: -58.381559}; // Coordenadas de Buenos Aires
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+</head>
+<body onload="initMap()">
+
+<header>
+    <h1>Dónde Estamos</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes-somos.html">Quienes Somos</a>
+    <a href="nuestro-menu.html">Nuestro Menú</a>
+    <a href="como-funciona.html">Cómo Funciona</a>
+    <a href="nuestro-catalogo.html">Nuestro Catálogo</a>
+</nav>
+
+<section class="content">
+    <h2>Encuéntranos Aquí</h2>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent blandit metus nec urna malesuada, vel faucibus elit sodales.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Café de Juegos de Mesa. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
