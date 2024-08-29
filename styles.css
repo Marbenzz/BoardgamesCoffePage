@@ -132,7 +132,11 @@ h2 {
     background-color: #F4F4F4;
 }
 
-.map,
+.map {
+    width: 50%;
+    height: auto; /* Asegura que el mapa mantenga su proporción */
+}
+
 .location-details {
     width: 50%;
     display: flex;
@@ -141,11 +145,13 @@ h2 {
 }
 
 .location-details img {
-    width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Cubre el espacio disponible sin deformar la imagen */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 100%; /* Ajusta la altura al 100% de su contenedor */
+    max-height: 100%; /* Limita la altura para igualar la del mapa */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
     margin-bottom: 20px;
 }
+
 
 .transport {
     background-color: #FFFFFF;
